@@ -1,19 +1,18 @@
-#include <stdlib.h>
+#include <stdlib.h>  //Inclusion of Header Files
 #include <time.h>
 #include<stdio.h>
 #include<string.h>
 // Generates and prints 'count' random
 // numbers in range [lower, upper].
-void printRandoms(int lower, int upper,
-                             int count)
+void printRandoms(int lower, int upper,int count)
 {
     int i;
     for (i = 0; i < count; i++) {
-        int num = (rand() %
-           (upper - lower + 1)) + lower;
+        int num = (rand() % (upper - lower + 1)) + lower;
         printf("%d ", num);
     }
 }
+
 void main()
 {   int i,j,k,c=0,n1,n2,w,flag=1,temp,call1=10,call2=20,t=0;
     char a[9]={1,2,3,4,5,6,7,8,9},pp1[20],pp2[20];
@@ -161,3 +160,4 @@ if(flag==1)
     t=0;
 }
 }
+
